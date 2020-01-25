@@ -37,7 +37,7 @@ class ItemDeputado extends StatelessWidget{
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: Icon(Icons.monetization_on),
+        leading: Icon(Icons.people),
         title: Text(_deputado.nome.toString()),
         subtitle: Text(_deputado.valor.toString()),
 
@@ -48,11 +48,9 @@ class ItemDeputado extends StatelessWidget{
 }
 
 class Deputado {
-
   final String nome;
-  //final String descricao;
   final double valor;
-
+  //final int numeroConta;
 
   Deputado(this.nome, this.valor);
 }
